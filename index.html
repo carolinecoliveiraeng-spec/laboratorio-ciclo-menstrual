@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laboratório do Ciclo Menstrual | Biologia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+<div class="eyebrow">Biologia • Ensino Médio • investigação científica</div>
+<h1>Laboratório do<br> Ciclo Menstrual</h1>
+<p>A ciência por trás dos hormônios. Investigue as estruturas, acompanhe os sinais hormonais e descubra como ovários e útero trabalham em conjunto ao longo do ciclo.</p>
+<div class="meta"><span class="pill">⏱ 100 minutos</span><span class="pill">🔬 5 estações de investigação</span><span class="pill">💻 Atividade individual</span></div>
+</div></header>
+<nav><div class="navinner">
+<button class="active" data-tab="inicio">Início</button><button data-tab="anatomia">1. Anatomia</button><button data-tab="hormonios">2. Central hormonal</button><button data-tab="simulador">3. Simulador</button><button data-tab="mapa">4. Mapa mental</button><button data-tab="desafio">5. Desafio final</button>
+</div></nav>
+<main>
+<section id="inicio" class="panel active">
+<h2>Bem-vindo(a), investigador(a)!</h2><p class="lead">Sua missão é explicar como o corpo coordena o ciclo menstrual por meio da comunicação entre cérebro, ovários e útero.</p>
+<div class="grid">
+<div class="card"><span class="tag">MISSÃO 01</span><h3>Observe antes de concluir</h3><p>O ciclo menstrual não é controlado por um único hormônio. Ele depende de sinais que partem do cérebro e chegam aos ovários, que respondem produzindo outros hormônios.</p></div>
+<div class="card"><span class="tag">PERGUNTA-GUIA</span><h3>O que faz a menstruação acontecer?</h3><p>Ao longo da investigação, acompanhe o que muda nos ovários e no endométrio e descubra por que a queda hormonal desencadeia a menstruação.</p></div>
+</div>
+<div class="card"><h3>Roteiro da investigação</h3><div class="grid3">
+<div class="tile sage"><b>1. Explorar</b><p class="small">Identifique os órgãos e suas funções.</p></div><div class="tile lilac"><b>2. Relacionar</b><p class="small">Conecte os hormônios às estruturas.</p></div><div class="tile peach"><b>3. Explicar</b><p class="small">Use evidências para resolver desafios.</p></div>
+</div></div>
+<div class="card"><h3>Vídeo de apoio</h3><p>Assista ao vídeo sobre o ciclo menstrual e observe especialmente a relação entre os hormônios ovarianos e as mudanças no endométrio.</p>
+<p><a href="https://www.frm.org.br/conteudo/educacao-basica/video/ciclo-menstrual-biologia-ensino-medio" target="_blank" rel="noopener">▶ Abrir videoaula: Ciclo menstrual – Biologia (Ensino Médio)</a></p>
+<p class="small">Material da Fundação Roberto Marinho. Duração informada: até 10 minutos. Se o vídeo não abrir dentro do Teams, use o link em uma nova guia.</p>
+<div class="callout"><b>Enquanto assiste:</b> anote o nome de dois hormônios, a função de cada um e uma mudança que ocorre no útero.</div></div>
+<button class="btn" onclick="go('anatomia')">Começar a investigação →</button>
+</section>
+
+<section id="anatomia" class="panel">
+<h2>Estação 1 — Conhecendo as estruturas</h2><p class="lead">Clique em um dos nomes das estruturas para descobrir sua função. A seleção funciona também por teclado e em telas sensíveis ao toque.</p>
+<div class="card organ-layout">
+<div>
+<svg viewBox="0 0 430 390" role="img" aria-label="Ilustração esquemática do sistema reprodutor feminino">
+<path d="M207 126 C170 95 139 83 112 99 C94 109 87 128 79 144 M223 126 C260 95 291 83 318 99 C336 109 343 128 351 144" fill="none" stroke="#789b87" stroke-width="9" stroke-linecap="round"/>
+<path d="M60 132 C38 108 24 127 30 151 C36 175 62 180 77 160 C88 146 76 137 60 132Z M370 132 C392 108 406 127 400 151 C394 175 368 180 353 160 C342 146 354 137 370 132Z" fill="#d9e8df" stroke="#416e5c" stroke-width="3"/>
+<path d="M174 120 Q215 102 256 120 L248 180 Q242 220 215 241 Q188 220 182 180Z M190 236 L240 236 L232 278 Q215 292 198 278Z" fill="#e9dff0" stroke="#795e8d" stroke-width="3"/>
+<path d="M198 280 L232 280 L239 355 Q215 370 191 355Z" fill="#f4dfd1" stroke="#9c725d" stroke-width="3"/>
+<text x="15" y="195" class="organ-label">Ovário</text><text x="320" y="195" class="organ-label">Ovário</text><text x="180" y="95" class="organ-label">Tubas uterinas</text><text x="263" y="194" class="organ-label">Útero</text><text x="247" y="330" class="organ-label">Vagina</text>
+</svg>
+<p class="small">Esquema didático simplificado, sem escala anatômica. Use os botões abaixo para selecionar cada estrutura.</p>
+<div class="organ-buttons" role="group" aria-label="Selecionar órgão">
+<button class="btn secondary organ-select" type="button" data-organ="ovarios">Ovários</button>
+<button class="btn secondary organ-select" type="button" data-organ="tubas">Tubas uterinas</button>
+<button class="btn secondary organ-select" type="button" data-organ="utero">Útero</button>
+<button class="btn secondary organ-select" type="button" data-organ="vagina">Vagina</button>
+</div>
+</div>
+<div class="info-box" id="organInfo"><span class="tag">EXPLORE</span><h3>Escolha uma estrutura</h3><p>Selecione um botão de órgão. A explicação aparecerá neste espaço.</p></div>
+</div>
+<div class="callout"><b>Pense:</b> quais estruturas produzem hormônios? Qual delas sofre as alterações que levam à menstruação?</div>
+</section>
+
+<section id="hormonios" class="panel">
+<h2>Estação 2 — A central de comando hormonal</h2><p class="lead">O ciclo é regulado pelo eixo hipotálamo–hipófise–ovário. A sequência abaixo mostra a comunicação entre essas estruturas.</p>
+<div class="card">
+<div class="grid">
+<div class="tile lilac"><h3>HIPOTÁLAMO</h3><p>Libera <b>GnRH</b>, que estimula a hipófise anterior.</p></div>
+<div class="tile sage"><h3>HIPÓFISE</h3><p>Libera <b>FSH e LH</b>, que atuam nos ovários.</p></div>
+</div><div class="arrow">↓</div>
+<div class="grid">
+<div class="tile peach"><h3>FSH</h3><p>Estimula o crescimento e o desenvolvimento dos folículos ovarianos.</p></div>
+<div class="tile peach"><h3>LH</h3><p>Seu pico desencadeia a ovulação e participa da formação do corpo lúteo.</p></div>
+</div><div class="arrow">↓</div>
+<div class="grid">
+<div class="tile lilac"><h3>ESTROGÊNIO</h3><p>Produzido principalmente pelos folículos em desenvolvimento. Estimula a reconstrução e o espessamento do endométrio.</p></div>
+<div class="tile sage"><h3>PROGESTERONA</h3><p>Produzida principalmente pelo corpo lúteo após a ovulação. Prepara e ajuda a manter o endométrio.</p></div>
+</div></div>
+<div class="card"><h3>O que é feedback hormonal?</h3><p><b>Feedback negativo:</b> na maior parte do ciclo, os hormônios ovarianos reduzem a estimulação do hipotálamo e da hipófise, ajudando a regular a produção hormonal.</p><p><b>Feedback positivo:</b> quando o estrogênio permanece elevado no final da fase folicular, pode estimular uma resposta que culmina no pico de LH e na ovulação.</p><div class="callout">Atenção: o estrogênio não exerce sempre o mesmo tipo de feedback. O efeito depende dos níveis hormonais e do momento do ciclo.</div></div>
+</section>
+
+<section id="simulador" class="panel">
+<h2>Estação 3 — Simulador do ciclo</h2><p class="lead">Mova o marcador para acompanhar um ciclo didático de 28 dias. Os níveis são representações qualitativas, não resultados de exames nem previsões individuais.</p>
+<div class="card">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap"><h3 id="dayTitle">Dia 1 — Menstruação</h3><span class="tag" id="phaseTag">Fase menstrual / início folicular</span></div>
+<label for="dayRange"><b>Escolha um dia do ciclo:</b> <span id="dayNum">1</span></label>
+<input id="dayRange" type="range" min="1" max="28" value="1">
+<div style="display:flex;justify-content:space-between" class="small"><span>Dia 1</span><span>Dia 14</span><span>Dia 28</span></div>
+<div class="grid" style="margin-top:18px">
+<div class="tile"><h3>O que acontece no ovário?</h3><p id="ovaryText">O corpo lúteo do ciclo anterior regrediu. Um novo grupo de folículos começa a se desenvolver.</p></div>
+<div class="tile lilac"><h3>O que acontece no útero?</h3><p id="uterusText">A queda de estrogênio e progesterona desencadeia a descamação do endométrio.</p></div>
+</div>
+<h3 style="margin-top:22px">Comportamento hormonal aproximado</h3>
+<div id="hormoneBars"></div>
+<div class="callout" id="whyText">A menstruação ocorre porque os níveis de progesterona e estrogênio caem após a regressão do corpo lúteo.</div>
+</div>
+<div class="card"><h3>Quatro momentos para comparar</h3><div class="grid">
+<div class="phase"><b>Dias 1–5</b><br>Menstruação e início do desenvolvimento folicular.</div><div class="phase"><b>Dias 6–13</b><br>Fase folicular: folículos crescem e estrogênio aumenta.</div><div class="phase"><b>Por volta do dia 14</b><br>Pico de LH e ovulação, em um ciclo didático de 28 dias.</div><div class="phase"><b>Dias 15–28</b><br>Fase lútea: corpo lúteo produz progesterona.</div>
+</div><p class="small">A duração e o momento da ovulação variam entre pessoas e entre ciclos. O dia 14 é uma referência didática, não uma regra.</p></div>
+</section>
+
+<section id="mapa" class="panel">
+<h2>Estação 4 — Mapa mental interativo</h2>
+<p class="lead">Acompanhe o caminho dos sinais hormonais. Clique em cada cartão para abrir uma explicação. As setas indicam a direção principal da comunicação hormonal; o feedback é apresentado separadamente.</p>
+<div class="card">
+  <div class="flowmap" id="flowMap">
+    <div class="flow-step">
+      <button type="button" class="map-node purple" data-map="hipotalamo" aria-pressed="false">
+        <strong>HIPOTÁLAMO</strong><span>Libera GnRH</span>
+      </button>
+    </div>
+    <div class="flow-arrow" aria-hidden="true">↓ <small>GnRH estimula</small></div>
+    <div class="flow-step">
+      <button type="button" class="map-node" data-map="hipofise" aria-pressed="false">
+        <strong>HIPÓFISE ANTERIOR</strong><span>Libera FSH e LH</span>
+      </button>
+    </div>
+    <div class="flow-arrow" aria-hidden="true">↓ <small>FSH e LH atuam nos</small></div>
+    <div class="flow-branches">
+      <button type="button" class="map-node gold" data-map="fsh" aria-pressed="false">
+        <strong>FSH</strong><span>Estimula o desenvolvimento dos folículos</span>
+      </button>
+      <button type="button" class="map-node gold" data-map="lh" aria-pressed="false">
+        <strong>LH</strong><span>Seu pico desencadeia a ovulação</span>
+      </button>
+    </div>
+    <div class="flow-arrow" aria-hidden="true">↓ <small>Atuam nos</small></div>
+    <div class="flow-step">
+      <button type="button" class="map-node" data-map="ovarios" aria-pressed="false">
+        <strong>OVÁRIOS</strong><span>Folículo em desenvolvimento → ovulação → corpo lúteo</span>
+      </button>
+    </div>
+    <div class="flow-arrow" aria-hidden="true">↓ <small>Produzem hormônios ovarianos</small></div>
+    <div class="flow-branches">
+      <button type="button" class="map-node purple" data-map="estrogenio" aria-pressed="false">
+        <strong>ESTROGÊNIO</strong><span>Estimula a reconstrução do endométrio</span>
+      </button>
+      <button type="button" class="map-node sage" data-map="progesterona" aria-pressed="false">
+        <strong>PROGESTERONA</strong><span>Prepara e ajuda a manter o endométrio</span>
+      </button>
+    </div>
+    <div class="flow-arrow" aria-hidden="true">↓ <small>Atuam no</small></div>
+    <div class="flow-step">
+      <button type="button" class="map-node peach" data-map="utero" aria-pressed="false">
+        <strong>ÚTERO — ENDOMÉTRIO</strong><span>Espessa-se e se torna secretor ao longo do ciclo</span>
+      </button>
+    </div>
+    <div class="flow-arrow" aria-hidden="true">↓ <small>Se não houver gestação e os hormônios caírem</small></div>
+    <div class="flow-step">
+      <button type="button" class="map-node outcome" data-map="menstruacao" aria-pressed="false">
+        <strong>MENSTRUAÇÃO</strong><span>Descamação do endométrio</span>
+      </button>
+    </div>
+  </div>
+  <div class="info-box map-info" id="mapInfo" aria-live="polite">
+    <span class="tag">EXPLORE O MAPA</span><h3>Selecione um cartão</h3>
+    <p>A explicação aparecerá aqui. Observe como cada etapa se conecta à seguinte.</p>
+  </div>
+</div>
+<div class="card feedback-card">
+  <h3>Uma conexão especial: o feedback hormonal</h3>
+  <div class="grid">
+    <div class="tile lilac"><b>Feedback negativo</b><p>Durante grande parte do ciclo, estrogênio e progesterona exercem inibição sobre o hipotálamo e a hipófise, regulando a liberação de GnRH, FSH e LH.</p></div>
+    <div class="tile sage"><b>Feedback positivo</b><p>Quando o estrogênio permanece elevado no final da fase folicular, estimula uma resposta que provoca o pico de LH, desencadeando a ovulação.</p></div>
+  </div>
+  <p class="small">Importante: o feedback hormonal não é uma etapa que acontece apenas depois das demais. É uma comunicação de retorno dos hormônios ovarianos para o hipotálamo e a hipófise.</p>
+</div>
+</section>
+
+<section id="desafio" class="panel">
+<h2>Estação 5 — Desafio final</h2><p class="lead">Agora você é responsável por interpretar evidências. Responda às questões e confira o feedback de cada uma.</p>
+<div class="card" id="quiz">
+<form id="quizForm">
+<div class="question"><b>1. Qual sequência representa corretamente o início do controle hormonal do ciclo?</b>
+<label class="option"><input type="radio" name="q1" value="a"> Ovário → útero → hipotálamo</label><label class="option"><input type="radio" name="q1" value="b"> Hipotálamo (GnRH) → hipófise (FSH e LH) → ovários</label><label class="option"><input type="radio" name="q1" value="c"> Útero → hipófise → ovários</label><div class="feedback" id="f1"></div></div>
+<div class="question"><b>2. Durante a fase folicular, qual é uma função importante do FSH?</b>
+<label class="option"><input type="radio" name="q2" value="a"> Estimular o desenvolvimento dos folículos ovarianos</label><label class="option"><input type="radio" name="q2" value="b"> Provocar diretamente a descamação do endométrio</label><label class="option"><input type="radio" name="q2" value="c"> Manter o endométrio após a ovulação</label><div class="feedback" id="f2"></div></div>
+<div class="question"><b>3. O que está diretamente associado ao pico de LH?</b>
+<label class="option"><input type="radio" name="q3" value="a"> Menstruação</label><label class="option"><input type="radio" name="q3" value="b"> Regressão do corpo lúteo</label><label class="option"><input type="radio" name="q3" value="c"> Ovulação</label><div class="feedback" id="f3"></div></div>
+<div class="question"><b>4. Após a ovulação, qual estrutura produz principalmente progesterona?</b>
+<label class="option"><input type="radio" name="q4" value="a"> Hipotálamo</label><label class="option"><input type="radio" name="q4" value="b"> Corpo lúteo</label><label class="option"><input type="radio" name="q4" value="c"> Endométrio</label><div class="feedback" id="f4"></div></div>
+<div class="question"><b>5. Se não houver gestação, o corpo lúteo regride. Qual consequência é esperada?</b>
+<label class="option"><input type="radio" name="q5" value="a"> Aumento contínuo da progesterona</label><label class="option"><input type="radio" name="q5" value="b"> Pico de LH todos os dias</label><label class="option"><input type="radio" name="q5" value="c"> Queda de progesterona e estrogênio, seguida da descamação do endométrio</label><div class="feedback" id="f5"></div></div>
+<button class="btn" type="button" onclick="gradeQuiz()">Corrigir minhas respostas</button>
+<button class="btn secondary" type="button" onclick="resetQuiz()">Refazer</button>
+<div id="result" style="margin-top:15px" aria-live="polite"></div>
+</form></div>
+<div class="card"><h3>Última pergunta da investigação</h3><p><b>Explique com suas palavras:</b> por que a menstruação acontece quando não se estabelece uma gestação?</p><p class="small">Registre sua resposta no caderno ou em uma atividade enviada pelo professor no Teams.</p></div>
+</section>
+</main>
+<footer><div class="wrap">Laboratório do Ciclo Menstrual • Recurso didático de Biologia • Modelo de 28 dias usado apenas para fins de aprendizagem.</div></footer>
+<script src="app.js" defer></script>
+</body></html>
